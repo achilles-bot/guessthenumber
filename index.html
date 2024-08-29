@@ -4,9 +4,10 @@
    </head>
   <body>
     <h1>Guess The Number</h1>
-      <p>im thinking of number between 1 to 100.can you guess it?</p>
-    <input type="number"placeholder="insert number"id="guess"></input><button onclick="checkGuess()">Guess</button>
-    <p id="result"></p>
+       <p>im thinking of number between 1 to 100.can you guess it?</p>
+       <input type="number"placeholder="insert number" id="guess"></input>
+       <button onclick="checkGuess()">Guess</button>
+       <p id="result"></p>
   </body>
    <script>
       let secretNumber =Math.floor(Math.random()*100)+1;
@@ -16,9 +17,9 @@
          if(guess == secretNumber){
           resultElement.textContent="congrats,betul";   
          }else if(guess > secretNumber){
-            resultElement.textContent="Nombor Besar,nombor lebih kecil daripada tekaan anda)
+            resultElement.textContent="Nombor Besar,nombor lebih kecil daripada tekaan anda"
          }else{
-            resultElement.textContent="Nombor Kecil,nombor lebih besar daipada tekaan anda)
+            resultElement.textContent="Nombor Kecil,nombor lebih besar daipada tekaan anda"
          }
          
       }
